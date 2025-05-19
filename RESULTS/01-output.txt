@@ -1,0 +1,499 @@
+Loading SGDP metadata...
+Trying encoding: utf-8
+Header line: #Sequencing_Panel	Illumina_ID	Sample_ID	Sample_ID(Aliases)	SGDP_ID	Population_ID	Region	Country	Town	Contributor	Gender	Latitude	Longitude	DNA_Source	Embargo	"SGDP-lite category: X=FullyPublic, Y=SignedLetterNoDelay, Z=SignedLetterDelay, DO_NOT_USE=do.not.use"
+Error with utf-8: 'utf-8' codec can't decode byte 0xd0 in position 40: invalid continuation byte
+Trying encoding: latin-1
+Header line: #Sequencing_Panel	Illumina_ID	Sample_ID	Sample_ID(Aliases)	SGDP_ID	Population_ID	Region	Country	Town	Contributor	Gender	Latitude	Longitude	DNA_Source	Embargo	"SGDP-lite category: X=FullyPublic, Y=SignedLetterNoDelay, Z=SignedLetterDelay, DO_NOT_USE=do.not.use"
+Successfully loaded metadata with latin-1 encoding
+Shape: (344, 16)
+Columns: ['#Sequencing_Panel', 'Illumina_ID', 'Sample_ID', 'Sample_ID(Aliases)', 'SGDP_ID', 'Population_ID', 'Region', 'Country', 'Town', 'Contributor', 'Gender', 'Latitude', 'Longitude', 'DNA_Source', 'Embargo', 'SGDP-lite category: X=FullyPublic, Y=SignedLetterNoDelay, Z=SignedLetterDelay, DO_NOT_USE=do.not.use']
+First few rows:
+  #Sequencing_Panel  ... SGDP-lite category: X=FullyPublic, Y=SignedLetterNoDelay, Z=SignedLetterDelay, DO_NOT_USE=do.not.use
+0                 B  ...                                                  X                                                  
+1                 B  ...                                                  X                                                  
+2                 B  ...                                                  X                                                  
+3                 B  ...                                                  X                                                  
+4                 B  ...                                                  X                                                  
+
+[5 rows x 16 columns]
+
+============================================================
+EXAMINING ACTUAL POPULATIONS IN SGDP METADATA
+============================================================
+Total unique populations: 164
+All populations in SGDP:
+  1. Aari
+  2. Abkhasian
+  3. Adygei
+  4. Agaw
+  5. Albanian
+  6. Aleut
+  7. Altaian
+  8. Amhara
+  9. Ami
+ 10. Armenian
+ 11. Atayal
+ 12. Australian
+ 13. Baka
+ 14. Bakola
+ 15. Balochi
+ 16. BantuHerero
+ 17. BantuKenya
+ 18. BantuTswana
+ 19. Basque
+ 20. BedouinB
+ 21. Bedzan
+ 22. Bengali
+ 23. Bergamo
+ 24. Biaka
+ 25. Bougainville
+ 26. Brahmin
+ 27. Brahui
+ 28. Bulala
+ 29. Bulgarian
+ 30. Burmese
+ 31. Burusho
+ 32. Cambodian
+ 33. Chane
+ 34. Chechen
+ 35. Chipewyan
+ 36. Chukchi
+ 37. Cree
+ 38. Crete
+ 39. Czech
+ 40. Dai
+ 41. Daur
+ 42. Dinka
+ 43. Druze
+ 44. Dusun
+ 45. Elmolo
+ 46. English
+ 47. Esan
+ 48. Eskimo_Chaplin
+ 49. Eskimo_Naukan
+ 50. Eskimo_Sireniki
+ 51. Estonian
+ 52. Even
+ 53. Finnish
+ 54. French
+ 55. Fulani
+ 56. Gambian
+ 57. Georgian
+ 58. Greek
+ 59. Hadza
+ 60. Han
+ 61. Hawaiian
+ 62. Hazara
+ 63. Hezhen
+ 64. Hungarian
+ 65. Icelandic
+ 66. Igbo
+ 67. Igorot
+ 68. Iranian
+ 69. Iraqi_Jew
+ 70. Iraqw
+ 71. Irula
+ 72. Itelman
+ 73. Japanese
+ 74. Jordanian
+ 75. Ju_hoan_North
+ 76. Kaba
+ 77. Kalash
+ 78. Kapu
+ 79. Karitiana
+ 80. Kashmiri_Pandit
+ 81. Kharia
+ 82. Khomani_San
+ 83. Khonda_Dora
+ 84. Kikuyu
+ 85. Kinh
+ 86. Kongo
+ 87. Korean
+ 88. Kurumba
+ 89. Kusunda
+ 90. Kyrgyz
+ 91. Lahu
+ 92. Laka
+ 93. Lemande
+ 94. Lezgin
+ 95. Luhya
+ 96. Luo
+ 97. Mada
+ 98. Madiga
+ 99. Makrani
+100. Mala
+101. Mandenka
+102. Mansi
+103. Maori
+104. Masai
+105. Mayan
+106. Mbuti
+107. Mende
+108. Miao
+109. Mixe
+110. Mixtec
+111. Mongola
+112. Mozabite
+113. Mursi
+114. Nahua
+115. Naxi
+116. Ngumba
+117. North_Ossetian
+118. Norwegian
+119. Ogiek
+120. Onge
+121. Orcadian
+122. Oroqen
+123. Palestinian
+124. Papuan
+125. Pathan
+126. Piapoco
+127. Pima
+128. Polish
+129. Punjabi
+130. Quechua
+131. Relli
+132. Rendille
+133. Russian
+134. Saami
+135. Saharawi
+136. Samaritan
+137. Sandawe
+138. Sardinian
+139. Sengwer
+140. She
+141. Sherpa
+142. Sindhi
+143. Somali
+144. Spanish
+145. Surui
+146. Tajik
+147. Thai
+148. Tibetan
+149. Tikar_South
+150. Tlingit
+151. Tu
+152. Tubalar
+153. Tujia
+154. Turkish
+155. Tuscan
+156. Ulchi
+157. Uygur
+158. Xibo
+159. Yadava
+160. Yakut
+161. Yemenite_Jew
+162. Yi
+163. Yoruba
+164. Zapotec
+
+Mapping SGDP populations to GWAS categories:
+------------------------------------------------------------
+Australian                -> Other/Mixed
+Crete                     -> European
+Dai                       -> Asian
+Dinka                     -> African
+French                    -> European
+Han                       -> Asian
+Ju_hoan_North             -> African
+Karitiana                 -> Hispanic or Latin American
+Mandenka                  -> African
+Mbuti                     -> African
+Mixe                      -> Hispanic or Latin American
+Papuan                    -> Other/Mixed
+Sardinian                 -> European
+Yoruba                    -> African
+Albanian                  -> European
+Altaian                   -> Other/Mixed (unmapped)
+Atayal                    -> Other/Mixed (unmapped)
+Chane                     -> Asian
+Chechen                   -> Other/Mixed (unmapped)
+Chukchi                   -> Other/Mixed (unmapped)
+Czech                     -> European
+Eskimo_Chaplin            -> Other/Mixed (unmapped)
+Hawaiian                  -> Other/Mixed (unmapped)
+Itelman                   -> Other/Mixed (unmapped)
+Khonda_Dora               -> Asian
+Maori                     -> Other/Mixed (unmapped)
+Norwegian                 -> European
+Polish                    -> European
+Samaritan                 -> Other/Mixed (unmapped)
+Somali                    -> African
+Armenian                  -> Other/Mixed (unmapped)
+Balochi                   -> Asian
+Bergamo                   -> European
+Daur                      -> Other/Mixed (unmapped)
+Masai                     -> African
+Mozabite                  -> African
+Pima                      -> Hispanic or Latin American
+Russian                   -> European
+Japanese                  -> Asian
+Jordanian                 -> Asian
+Palestinian               -> Asian
+Punjabi                   -> Asian
+Abkhasian                 -> Other/Mixed (unmapped)
+Adygei                    -> European
+Aleut                     -> Other/Mixed (unmapped)
+Ami                       -> Other/Mixed (unmapped)
+BantuHerero               -> African
+BantuKenya                -> African
+BantuTswana               -> African
+Basque                    -> European
+BedouinB                  -> African
+Bengali                   -> Asian
+Biaka                     -> African
+Bougainville              -> Other/Mixed
+Brahmin                   -> Asian
+Brahui                    -> Asian
+Bulgarian                 -> European
+Burmese                   -> Asian
+Burusho                   -> Asian
+Cambodian                 -> Asian
+Druze                     -> Other/Mixed
+Dusun                     -> Asian
+English                   -> European
+Esan                      -> African
+Eskimo_Naukan             -> Other/Mixed (unmapped)
+Eskimo_Sireniki           -> Other/Mixed (unmapped)
+Estonian                  -> European
+Gambian                   -> African
+Georgian                  -> Other/Mixed (unmapped)
+Greek                     -> European
+Hazara                    -> Asian
+Hezhen                    -> Asian
+Hungarian                 -> European
+Icelandic                 -> European
+Igorot                    -> Asian
+Iranian                   -> Asian
+Iraqi_Jew                 -> Asian
+Irula                     -> Asian
+Kalash                    -> Asian
+Kapu                      -> Other/Mixed (unmapped)
+Khomani_San               -> African
+Kinh                      -> Asian
+Korean                    -> Asian
+Kusunda                   -> Other/Mixed (unmapped)
+Kyrgyz                    -> Asian
+Lahu                      -> Asian
+Lezgin                    -> Other/Mixed (unmapped)
+Luhya                     -> African
+Luo                       -> Other/Mixed (unmapped)
+Madiga                    -> Other/Mixed (unmapped)
+Makrani                   -> Asian
+Mala                      -> Asian
+Mansi                     -> Other/Mixed (unmapped)
+Mayan                     -> Hispanic or Latin American
+Mende                     -> African
+Miao                      -> Asian
+Mixtec                    -> Hispanic or Latin American
+Mongola                   -> Asian
+North_Ossetian            -> Other/Mixed (unmapped)
+Orcadian                  -> European
+Oroqen                    -> Asian
+Pathan                    -> Asian
+Piapoco                   -> Hispanic or Latin American
+Relli                     -> Other/Mixed (unmapped)
+Saami                     -> Other/Mixed (unmapped)
+Saharawi                  -> African
+She                       -> Asian
+Sindhi                    -> Asian
+Spanish                   -> European
+Surui                     -> Hispanic or Latin American
+Tajik                     -> Other/Mixed (unmapped)
+Thai                      -> Asian
+Tlingit                   -> Other/Mixed (unmapped)
+Tu                        -> African
+Tubalar                   -> Asian
+Tujia                     -> Asian
+Turkish                   -> Asian
+Tuscan                    -> European
+Ulchi                     -> Other/Mixed (unmapped)
+Uygur                     -> Asian
+Xibo                      -> Asian
+Yadava                    -> Other/Mixed (unmapped)
+Yakut                     -> Other/Mixed (unmapped)
+Yemenite_Jew              -> Other/Mixed (unmapped)
+Yi                        -> Asian
+Zapotec                   -> Hispanic or Latin American
+Even                      -> Other/Mixed (unmapped)
+Finnish                   -> European
+Naxi                      -> Asian
+Quechua                   -> Hispanic or Latin American
+Kashmiri_Pandit           -> Other/Mixed (unmapped)
+Kharia                    -> Asian
+Kurumba                   -> Asian
+Onge                      -> Asian
+Kongo                     -> African
+Nahua                     -> Hispanic or Latin American
+Chipewyan                 -> Other/Mixed (unmapped)
+Cree                      -> Other/Mixed (unmapped)
+Igbo                      -> African
+Lemande                   -> African
+Sherpa                    -> Asian
+Tibetan                   -> Asian
+Aari                      -> African
+Agaw                      -> African
+Amhara                    -> African
+Baka                      -> African
+Bakola                    -> African
+Bedzan                    -> African
+Bulala                    -> African
+Elmolo                    -> African
+Fulani                    -> African
+Hadza                     -> African
+Iraqw                     -> African
+Kaba                      -> African
+Kikuyu                    -> African
+Laka                      -> African
+Mada                      -> African
+Mursi                     -> African
+Ngumba                    -> African
+Ogiek                     -> African
+Rendille                  -> African
+Sandawe                   -> African
+Sengwer                   -> African
+Tikar_South               -> African
+
+Total populations mapped: 164
+Mapping summary:
+  African: 45 populations
+  European: 21 populations
+  Asian: 48 populations
+  Hispanic or Latin American: 10 populations
+  Other/Mixed: 40 populations
+Loading SGDP VCF data...
+[read_vcf] 65536 rows in 1.47s; chunk in 1.47s (44539 rows/s); 22 :22274880
+[read_vcf] 131072 rows in 2.93s; chunk in 1.46s (44880 rows/s); 22 :26861076
+[read_vcf] 196608 rows in 4.40s; chunk in 1.47s (44608 rows/s); 22 :30500142
+[read_vcf] 262144 rows in 5.87s; chunk in 1.47s (44708 rows/s); 22 :34136592
+[read_vcf] 327680 rows in 7.33s; chunk in 1.47s (44670 rows/s); 22 :37333287
+[read_vcf] 393216 rows in 8.80s; chunk in 1.47s (44620 rows/s); 22 :41023304
+[read_vcf] 458752 rows in 10.27s; chunk in 1.47s (44584 rows/s); 22 :44660809
+[read_vcf] 524288 rows in 11.74s; chunk in 1.47s (44650 rows/s); 22 :47404926
+[read_vcf] 589824 rows in 13.21s; chunk in 1.47s (44599 rows/s); 22 :49759878
+[read_vcf] 618800 rows in 13.88s; chunk in 0.67s (43543 rows/s)
+[read_vcf] all done (44594 rows/s)
+Extracting population from VCF sample names...
+Sample extraction examples:
+  S_Mozabite-1 -> Mozabite
+  S_Mozabite-2 -> Mozabite
+  S_Saharawi-1 -> Saharawi
+  S_Saharawi-2 -> Saharawi
+  S_BantuHerero-2 -> BantuHerero
+  S_BantuHerero-1 -> BantuHerero
+  S_BantuTswana-2 -> BantuTswana
+  S_BantuTswana-1 -> BantuTswana
+  S_Biaka-1 -> Biaka
+  S_Biaka-2 -> Biaka
+Mapping VCF samples to GWAS categories...
+
+Sample mapping summary:
+Total samples in VCF: 278
+Sample counts by GWAS category:
+  African: 46 samples
+  Asian: 92 samples
+  European: 41 samples
+  Hispanic or Latin American: 21 samples
+  Other/Mixed: 78 samples
+
+GWAS categories found in genetic data: ['African' 'Asian' 'European' 'Hispanic or Latin American' 'Other/Mixed']
+African: 46 samples
+European: 41 samples
+Asian: 92 samples
+Hispanic or Latin American: 21 samples
+Computing nucleotide diversity by GWAS category...
+Processing African: 46 samples
+  Allele count shape: (618800, 2)
+  Total variants: 618800
+  Biallelic variants: 211498
+  Segregating biallelic variants: 210978
+  Using 210978 variants in 42 blocks
+  Calculated 42 blocks with valid diversity
+  π = 9.575 ×10⁻⁴ (95% CI: 8.583-10.620)
+Processing Asian: 92 samples
+  Allele count shape: (618800, 2)
+  Total variants: 618800
+  Biallelic variants: 157149
+  Segregating biallelic variants: 156913
+  Using 156913 variants in 31 blocks
+  Calculated 31 blocks with valid diversity
+  π = 7.177 ×10⁻⁴ (95% CI: 6.240-8.097)
+Processing European: 41 samples
+  Allele count shape: (618800, 2)
+  Total variants: 618800
+  Biallelic variants: 107172
+  Segregating biallelic variants: 106843
+  Using 106843 variants in 21 blocks
+  Calculated 21 blocks with valid diversity
+  π = 7.073 ×10⁻⁴ (95% CI: 6.086-8.073)
+Processing Hispanic or Latin American: 21 samples
+  Allele count shape: (618800, 2)
+  Total variants: 618800
+  Biallelic variants: 75350
+  Segregating biallelic variants: 73050
+  Using 73050 variants in 14 blocks
+  Calculated 14 blocks with valid diversity
+  π = 5.965 ×10⁻⁴ (95% CI: 4.868-7.310)
+Processing Other/Mixed: 78 samples
+  Allele count shape: (618800, 2)
+  Total variants: 618800
+  Biallelic variants: 164729
+  Segregating biallelic variants: 164499
+  Using 164499 variants in 32 blocks
+  Calculated 32 blocks with valid diversity
+  π = 7.267 ×10⁻⁴ (95% CI: 6.360-8.204)
+
+Normalized diversity shares:
+  African: 25.8%
+  Asian: 19.4%
+  European: 19.1%
+  Hispanic or Latin American: 16.1%
+  Other/Mixed: 19.6%
+
+====================================================================================================
+UN CENSUS POPULATION vs SGDP GENETIC DIVERSITY BY GWAS CATEGORY
+====================================================================================================
+GWAS Category                       UN Population %      SGDP Diversity %     Diversity/Pop Ratio
+(from GWAS Monitor)                 (2022 estimates)     (Chr 22 π share)     (times expected)  
+----------------------------------------------------------------------------------------------------
+European                            9.4                  19.1                 2.03              
+Asian                               45.1                 19.4                 0.43              
+African                             17.2                 25.8                 1.50              
+African American or Afro-Caribbean  1.0                  0.0                  0.00              
+Hispanic or Latin American          8.1                  16.1                 1.99              
+Other/Mixed                         18.2                 19.6                 1.08              
+
+EXPLANATION:
+• UN Population %: Global census data from GWAS Diversity Monitor (2022 UN estimates)
+• SGDP Diversity %: Nucleotide diversity (π) share from Simons Genome Diversity Project
+• Diversity/Pop Ratio: How much genetic diversity relative to population size
+  - Ratio > 1.0: More genetic diversity than expected from population size
+  - Ratio < 1.0: Less genetic diversity than expected from population size
+
+NOTE: African American/Afro-Caribbean shows 0% because SGDP focuses on indigenous
+populations in ancestral regions, not diaspora populations. The 'African' category
+represents indigenous African populations and demonstrates the expected pattern:
+Africa = cradle of human genetic diversity.
+
+==========================================================================================
+DETAILED SGDP NUCLEOTIDE DIVERSITY ESTIMATES (Chromosome 22)
+==========================================================================================
+GWAS Category                       π (×10⁻⁴)       95% CI                    Share of Total 
+                                    (nucleotide div.) (bootstrap)               Diversity %    
+------------------------------------------------------------------------------------------
+European                            7.073           (6.086-8.073)        19.1           
+Asian                               7.177           (6.240-8.097)        19.4           
+African                             9.575           (8.583-10.620)        25.8           
+Hispanic or Latin American          5.965           (4.868-7.310)        16.1           
+Other/Mixed                         7.267           (6.360-8.204)        19.6           
+
+Data saved to 'UN_Census_vs_SGDP_Genetic_Diversity_by_GWAS_Category.csv'
+
+============================================================
+SGDP POPULATION MAPPING TO GWAS CATEGORIES SUMMARY
+============================================================
+African: 46 samples
+Asian: 92 samples
+European: 41 samples
+Hispanic or Latin American: 21 samples
+Other/Mixed: 78 samples
